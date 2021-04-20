@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: 'pwsignaturetwomedium';
+    src: url('/pwsignaturetwo.medium-webfont.woff2') format('woff2'),
+         url('pwsignaturetwo.medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;  
+}
+body{
+    background: #1d2023;
+}
+.headbar{
+    top: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo{
+    font-family:'pwsignaturetwomedium' ;
+    letter-spacing: 1px;
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    letter-spacing: 4px;
+
+}
+.icon{
+    width: 22px;
+    filter: invert(1);
+}
+.lists{
+    display: flex;
+    list-style: none;
+    align-content: center;
+    align-items: center;
+   
+    
+}
+.lists li{
+    transition: 0.2s;
+    margin-left: 70px;
+}
+
+.lists li:hover{
+    transform: scale(1.2);
+}
+    
+.lists a{
+    font: 1em sans-serif;
+    
+    text-decoration: none;
+    color: white;
+    
+}
+
+.mid{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform:translateY(-50%);
+    align-items: center;
+}
+
+.text p{
+    display: inline-block;
+    font-size: 3.5em;
+    font-weight: 500;
+} 
+.xxx{
+    margin-left: 20px;
+    transition: 0.2s;
+}
+.xxx:hover{
+    color: turquoise;
+}
+
+.img img{
+    position: absolute;
+    width: 300px;
+    left: 25%;
+    transform: translateX(-25%) translateY(-50%);
+    border-radius: 50%;
+}
+.para{
+    font-size: 2em;
+    font-weight:500;
+}
+
+.text , .para{
+    font-family: 'Poppins' ;
+}
+
+.sidetext{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
+    color: white;
+    padding-left: 500px;
+    width: 50%;
+
+} 
+.social{
+    position: absolute;
+    bottom: 0%;
+}
+.media{
+    display: flex;
+
+}
+.media li{
+    list-style: none;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    transition: 0.2s;
+}
+.media li img{
+    width: 40px;
+}
+
+.social{
+    filter: invert(1);
+}
+.media li:hover{
+    transform: translateY(-10px) scale(1.2);
+}
+
+
+/* FOR DARK MODE SWITCH */
+/* 
+@media(max-width: 991px){
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+    .social{
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    
+
+    }
+    .media{
+        justify-content: space-between;
+        
+    }
+    .media li img{
+        width: 30px;
+    }
+    .headbar{
+        top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+}
+ */
+
